@@ -1,0 +1,256 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+ 
+
+}
+
+section{
+position: relative;
+width: 100%;
+min-height: 100vh;
+padding: 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+header .logo{
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+
+header{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header ul
+{
+position: relative;
+display: flex;
+
+}
+
+header ul li a {
+
+display: inline-block;
+margin: 0px 5px 0px 5px;
+color: rgb(255, 2, 2);
+font-size: 1.3rem;
+
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.content .textbox{
+position: relative;
+max-width: 600px;
+
+}
+
+.content .textbox h3{
+    color: rgb(65, 60, 60);
+    font-size: 4em;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+.content .textbox h3 span{
+    color: red;
+    font-size: 1.1em;
+    border-right: 4px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(7),  cursor .4s step-end infinite alternate;
+
+}
+
+/* cursor blinking */
+@keyframes cursor{
+    40%{
+        border-color: transparent;
+    }
+}
+
+/* typing effect */
+@keyframes typing{
+    from { width:0;}
+}
+.content .imgbox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+
+}
+
+.content .imgbox img{
+    max-width: 340px;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+#highlight{
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.thumb li :hover{
+    transform: translateY(-15px);
+    
+
+}
+
+.thumb li img{
+    max-width: 60px;
+
+}
+
+.circle{
+    height: 100%;
+    width: 100%;
+   clip-path: circle(570px at right 700px) ;
+    background-color: red;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+
+}
+#name{
+    position: absolute;
+    font-size: 3em;
+    color: green;
+   left: 11rem;
+   font-style: italic;
+   font-family: "Dancing Script", cursive;
+
+}
+
+
+
+.container{
+    top: -42rem;
+    width: 20%;
+    height: 99vh;
+    margin: 2px ;
+    position: relative;
+    border: 2px black solid;
+    position: relative;
+    
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+.input_box{
+    /* border: 2px brown solid; */
+   
+    padding: 0.5rem;
+}
+
+.input_box>input{
+    border-radius:10px ;
+    width: 10rem;
+    height: 2rem;
+    margin-top: .8rem;
+    text-align: center;
+}
+
+button{
+    width: 5rem;
+    height: 2rem;
+    margin:0px 0px 0px  1rem;
+    border-radius:1rem ;
+    top:1rem;
+    
+}
+
+#or::before{
+    content: '---------------';
+}
+
+#or{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#or::after{
+    content: '------------------';
+}
+
+p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+i{
+    width: 3rem;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    background-color: white;
+    margin-left: 1.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+   
+}
+
+
+i:hover{
+    background-color: antiquewhite;
+    color: rgb(234, 39, 72);
+    border-radius: 10%;
+}
+/* media query */
+@media  (width>= 425px){
+    #sign{
+     color: red;
+     font-style: italic;
+    }
+     
+ }
+
+
+
+

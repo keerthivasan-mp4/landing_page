@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="script.js"></script>
+ <section>
+  <div class="circle"></div>
+    <header>
+      <!-- logo -->
+    <a href="http://"  ><img src="/image/chef_logo.jpeg" alt="" class="logo" ></a>
+    <!-- name -->
+    <span id="name">Gourmet Gallery</span>
+    <!-- nav link -->
+      <ul>
+     
+      <li><a href="http://">Login</a></li>
+      
+      </ul>
+
+    </header>
+
+    <div class="content">
+     <div class="textbox">
+        <h3>Let us <span> Cook...</span>
+       </h3> 
+       <p>We offer wide range of food like, <span id="highlight">WOOD Fired Pizza</span> to <span id="highlight">Wraps filled with MEAT</span> and juicy Sauce of your Choice. Wait we aren't done yet, you forget we make <span id="highlight">exotic dessert</span>  and much MORE....</p>
+      </div>
+        <div class="imgbox">
+         <img src="/image/pizza.png" alt="pizza" class="item" >
+         <!-- <p id="desc"></p> -->
+        
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="/image/pizza.png" alt="PIZZA" id="img1" onclick="imgslider('image/pizza.png'); changecirclecolor('red');" ></li>
+        <li><img src="image/wrap.png" alt="WRAPS" id="img2" onclick="imgslider('image/wrap.png'); changecirclecolor('#228B22')" ><p id="wrap"></li>
+        <li><img src="/image/cake.png" alt="DESERT" id="img3" onclick="imgslider('image/cake.png'); changecirclecolor('#F98F7C')"></li>
+      </ul>
+      
+    
+
+ 
+ </section>
+
+  
+</body>
+</html>
